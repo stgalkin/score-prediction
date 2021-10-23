@@ -1,0 +1,16 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+parameters:
+    inferPrivatePropertyTypeFromConstructor: true
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    excludePaths:
+        - %currentWorkingDirectory%/bin/*
+        - %currentWorkingDirectory%/config/*
+        - %currentWorkingDirectory%/vendor/*
+        - %currentWorkingDirectory%/var/*
+        - %currentWorkingDirectory%/tests/*
+        - %currentWorkingDirectory%/storage/*
+        - %currentWorkingDirectory%/public/*
+        - %currentWorkingDirectory%/routes/*
+        - %currentWorkingDirectory%/_ide_helper.php
