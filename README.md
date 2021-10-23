@@ -22,3 +22,12 @@ Add the domain app to the hosts file
 
 Open the browser and go to http://prediction.loc/
 
+Gif Example:
+![alt-text](https://github.com/stgalkin/score-prediction/blob/main/public/screencast.gif)
+
+
+Code Details:
+- Teams for the tournament are chosen randomly from AVAILABLE_TEAMS(8teams) const at the [CreateTournamentService](https://github.com/stgalkin/score-prediction/blob/main/app/Components/Soccer/Domain/Tournament/Services/CreateTournamentService.php)
+- The games between teams table is defined at the same service const WEEK_MAP
+- Calculating the odds of winning [here](https://github.com/stgalkin/score-prediction/blob/main/app/Components/Soccer/Domain/Prediction/Services/PredictionService.php)
+
